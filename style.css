@@ -24,7 +24,7 @@
 
 body {
   font-family: "Comfortaa";
-  font-size: 22px;
+  font-size: 20px;
   background-color: var(--one-bg);
   padding: 0;
   margin: 0;
@@ -148,7 +148,7 @@ body {
 }
 
 .clock-holder {
-  margin: 60px 0;
+  /* margin: 60px 0; */
 }
 
 .container-lum {
@@ -157,23 +157,31 @@ body {
   position: relative;
 }
 
+.videos {
+  display: flex;
+  flex-direction: row;
+}
+
 .bori {
-  height: 400px;
-  width: 400px;
-  margin-left: 70%;
+  height: 300px;
+  width: 300px;
+  /* margin-left: 75%; */
 }
 
 .container-lum video {
-  margin-top: -300px;
+  /* margin-top: -300px; */
+  width: 500px;
+  height: 500px;
+  /* margin-left: 50px; */
 }
 
 .love {
   height: 150px;
   width: 400px;
-  position: absolute;
-  left: 37%;
-  top: 40%;
-  transform: rotate(-20deg);
+  /* position: absolute; */
+  /* left: 43%; */
+  /* top: 40%; */
+  transform: rotate(5deg);
 }
 
 .container-lum p {
@@ -206,7 +214,7 @@ body {
 .card-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 .icon {
@@ -255,7 +263,106 @@ body {
 }
 
 .cake {
-  width: 70%;
-  height: 400px;
-  margin-left: 15%;
+  width: 100%;
+  /* height: 400px; */
+  /* margin-left: 15%; */
+}
+
+/* Mobile styles */
+@media (max-width: 500px) {
+  body {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .hero {
+    padding: 5% 5%;
+  }
+
+  .videos {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container-cotton p {
+    font-size: 20px;
+  }
+  .card-container {
+    margin-top: 10px;
+  }
+
+  .container-cotton font {
+    font-size: 30px;
+  }
+
+  .bori {
+    height: 200px;
+    width: 200px;
+  }
+
+  .container-lum video {
+    margin-top: 0px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .card p {
+    font-size: 20px;
+  }
+
+  .container-lum p {
+    font-size: 20px;
+  }
+
+  .love {
+    padding: 30px;
+    height: 50px;
+    width: 100px;
+    transform: rotate(-55deg);
+  }
+
+  .in-container .hap {
+    font-size: 30px;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+  }
+
+  .in-container .i,
+  .in-container .so {
+    font-size: 20px;
+  }
+
+  .in-container .hey {
+    font-size: 20px;
+  }
+
+  .trans-p-c,
+  .trans-c-l,
+  .trans-l-p,
+  .trans-p-la {
+    height: 150px;
+  }
+
+  .container-cotton,
+  .container-lum,
+  .container {
+    padding: 10% 5%;
+  }
+
+  .card {
+    width: 60%;
+    margin: 10px;
+  }
+
+  .card font {
+    display: block;
+  }
+
+  .card-container {
+    flex-direction: column; /* Stack cards vertically on mobile */
+    align-items: center; /* Center align cards */
+  }
 }
