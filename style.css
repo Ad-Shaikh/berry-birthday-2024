@@ -175,6 +175,22 @@ body {
   /* margin-left: 50px; */
 }
 
+ul.heart-list {
+  list-style: none;
+  padding: 0;
+}
+ul.heart-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+ul.heart-list li::before {
+  content: "❤️";
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
 .love {
   height: 150px;
   width: 400px;
