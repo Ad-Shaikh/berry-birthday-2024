@@ -1,0 +1,261 @@
+:root {
+  --one-bg: rgba(224, 187, 228);
+  --two-bg: rgba(254, 200, 216);
+  --three-bg: #ffdfd3;
+  --four-bg: rgba(224, 187, 228);
+  --five-bg: rgba(254, 200, 216);
+  --accent-bg: #957dad;
+  --text-color: rgb(49, 0, 0);
+
+  --gradient-p-c: linear-gradient(to bottom, var(--one-bg), var(--two-bg));
+
+  --gradient-c-l: linear-gradient(to bottom, var(--two-bg), var(--three-bg));
+
+  --gradient-l-p: linear-gradient(to bottom, var(--three-bg), var(--four-bg));
+
+  --gradient-p-la: linear-gradient(to bottom, var(--four-bg), var(--five-bg));
+
+  --gradient-lavender: linear-gradient(
+    to bottom,
+    rgba(255, 223, 211),
+    rgba(224, 187, 228)
+  );
+}
+
+body {
+  font-family: "Comfortaa";
+  font-size: 22px;
+  background-color: var(--one-bg);
+  padding: 0;
+  margin: 0;
+}
+
+.hero {
+  padding: 8% 16%;
+}
+
+.in-container {
+  display: inline-block;
+}
+
+.in-container .hey {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  border-right: 5px solid;
+  width: 0%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(13), cursor 0.4s step-end infinite alternate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+    border-color: transparent;
+  }
+}
+
+.in-container .hap {
+  font-weight: 900;
+  letter-spacing: 1px;
+  border-right: 5px solid;
+  width: 0%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(14), cursor 0.4s step-end infinite alternate;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  color: var(--text-color);
+  font-size: 90px;
+  letter-spacing: 3px;
+  margin-block-start: 60px;
+  margin-block-end: 60px;
+}
+
+.in-container .i {
+  font-weight: 900;
+  border-right: 5px solid;
+  width: 0%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 6s steps(63), cursor 0.4s step-end infinite alternate;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  font-size: 25px;
+}
+
+.in-container .so {
+  font-weight: 900;
+  border-right: 5px solid;
+  width: 0%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s steps(30), cursor 0.4s step-end infinite alternate;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
+  font-size: 25px;
+}
+
+.trans-p-c {
+  height: 200px;
+  background-image: var(--gradient-p-c);
+  width: 100%;
+}
+
+.trans-c-l {
+  height: 200px;
+  background-image: var(--gradient-c-l);
+  width: 100%;
+}
+
+.trans-l-p {
+  height: 200px;
+  background-image: var(--gradient-l-p);
+  width: 100%;
+}
+
+.trans-p-la {
+  height: 200px;
+  background-image: var(--gradient-p-la);
+  width: 100%;
+}
+
+.container-cotton {
+  background-color: var(--two-bg);
+  padding: 16% 16%;
+}
+
+.container-cotton p {
+  font-size: 20px;
+}
+
+.container-cotton font {
+  font-size: 50px;
+  margin-right: 10px;
+  font-weight: 900;
+  color: rgb(49, 0, 0);
+}
+
+.clock-holder {
+  margin: 60px 0;
+}
+
+.container-lum {
+  background-color: #ffdfd3;
+  padding: 16% 8%;
+  position: relative;
+}
+
+.bori {
+  height: 400px;
+  width: 400px;
+  margin-left: 70%;
+}
+
+.container-lum video {
+  margin-top: -300px;
+}
+
+.love {
+  height: 150px;
+  width: 400px;
+  position: absolute;
+  left: 37%;
+  top: 40%;
+  transform: rotate(-20deg);
+}
+
+.container-lum p {
+  font-size: 30px;
+}
+
+.container {
+  padding: 16% 16%;
+}
+
+.container p {
+  font-size: 25px;
+}
+
+.card {
+  height: 350px;
+  width: 250px;
+  background-color: #957dad;
+  color: white;
+  padding: 40px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.card.fade-out {
+  opacity: 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.icon {
+  font-size: 100px;
+  display: inline-block;
+  text-align: center;
+  transform: scale(2);
+}
+
+.card h2 {
+  width: fit-content;
+  font-size: 30px;
+  display: none;
+  color: var(--three-bg);
+  font-weight: bolder;
+}
+
+.card p {
+  font-size: 25px;
+  display: none;
+}
+
+.card font {
+  margin-top: 120px;
+  display: block;
+  font-size: 80px;
+  text-align: center;
+}
+
+.card.show font {
+  display: none;
+}
+
+.card.show p,
+.card.show h2 {
+  display: block;
+}
+
+.container-lavender {
+  background-color: #fec8d8;
+  padding: 16%;
+}
+
+.birthday-wishes {
+  text-align: justify;
+}
+
+.cake {
+  width: 70%;
+  height: 400px;
+  margin-left: 15%;
+}
