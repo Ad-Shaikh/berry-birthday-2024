@@ -184,8 +184,10 @@ ul.heart-list li {
   padding-left: 30px;
   margin-bottom: 10px;
 }
+
 ul.heart-list li::before {
-  content: "❤️";
+  content: "\2764"; /* Unicode for the heart symbol */
+  color: rgb(210, 53, 53); /* Set the heart color */
   position: absolute;
   left: 0;
   top: -2px;
